@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: cornsilk;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name-restro{
+    color:darkgoldenrod;
+    font-family: 'Redressed';
+    font-size: 2.5rem;
+}
+
+.main-container{
+    max-width: 1024px;
+    margin: auto;
+    height: auto;
+}
+
+.logo{
+    height: 60px;
+    width: 100px;
+}
+
+nav{
+
+}
+
+main{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    height: 70vh;
+    padding: 20px;
+}
+
+/* article{
+    width: 100%;
+} */
+
+/*------------------------------ Article of the left side ------------------------------*/
+.info-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#label-ingri{
+    font-family: 'Akaya Telivigala';
+    font-weight:550;
+    line-height: 2rem;
+    font-size: 1.6rem;
+}
+
+.ingri-extra{
+    padding: 10px;
+    border-radius: 20px;
+    height: 30px;
+}
+
+.btn-quantity{
+    display: flex;
+}
+
+.btn-less{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+   /* border: none;*/
+    /*box-shadow: 2px 2px gainsboro;*/
+}
+
+/*.btn-less:hover{
+    border:groove;
+    box-shadow: 2px 2px gainsboro;
+}*/
+
+.btn-more{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /*border: none;*/
+    /*box-shadow: 2px 2px gainsboro;*/
+}
+
+/* .btn-more:hover{
+    border:groove;
+    box-shadow: 2px 2px gainsboro;
+}*/
+
+/*------------------------------ Main Article ------------------------------*/
+.info-main{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-around;*/
+    align-items:flex-start; 
+    /* background-color: blueviolet; */
+}
+
+.food-name{
+    text-align:left;
+    font-size: 3rem;
+    font-family: 'Staatliches';
+}
+
+.food-descri{
+    text-align: center;
+}
+
+/*-----------Button next and back---------------*/
+.btn-next-back{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 50px;
+    height: 160px;
+    top: 35%;
+    left: 53%;
+    border-radius: 50%;
+    /* background-color: blue; */
+}
+
+.btn-back{
+    width: 50px;
+    height: 80px;
+    border-radius: 50% 50% 0 0;
+}
+
+.btn-next{
+    width: 50px;
+    height: 80px;
+    border-radius: 0 0 50% 50%;
+}
+
+/*------------------------------ Article of the Right side ------------------------------*/
+
+.info-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#price-label{
+    font-family: 'Akaya Telivigala';
+    font-weight:550;
+    line-height: 2rem;
+    font-size: 1.6rem;
+}
+
+/*------------------------------ Footer ------------------------------*/
+
+.copy-r{
+    text-align: right;
+}

@@ -4,11 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante -NOM-</title>
+    <title>Restaurante Forte</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./js/script.js"></script>
+  
 </head>
 <body>
-    <header>
-        <h1>Restaurante</h1>
-    </header>
+    <div class="main-container">
+        <header>
+            <img src="./imgs/logo.png" alt="" class="logo">
+            <p class="name-restro"><b>Restaurant Sherpa</b></p>
+            <nav>Navs</nav>
+        </header>
+        <main>
+            <article class="info-left">
+                <div class="info-ingri">
+                    <label id="label-ingri" for=".ingri-extra">Ingridients<br></label>
+                    <div class="ingri">*Ingridients of the food*</div>
+                    <input type="text" class="ingri-extra" placeholder="For extra ingridients"> 
+                </div>
+                <div class="btn-quantity">
+                    <button class="btn-less" onclick="">-</button>
+                    <div class="food-quantity">*amount of food*</div>
+                    <button class="btn-more">+</button>
+                </div>
+            </article>
+            <!-----------------Main Article----------------------------->
+            <article class="info-main">
+                <h1 class="food-name">*Food Name*</h1>
+                <h3 class="food-descri">*Description*</h3>
+            </article>
+            <!--------------------Right Article--------------------------->
+            <article class="info-right">
+                <label id="price-label" for=".price">Price<br></label>
+                <p class="price">*price*</p>
+            </article>
+        </main>
+        <!------------Button Back and Next-------------------->
+        <div class="btn-next-back">
+            <button class="btn-back">&larr;</button>
+            <button class="btn-next">&rarr;</button>
+        </div>
+        <footer>
+            <p class="copy-r">&copy; All rights reserved, Restaurant Sherpa</p>
+        </footer>
+    </div>
+    <section class="food-dish">
+        <img src="" alt="" class="img-left">
+        <img src="" alt="" class="img-main">
+        <img src="" alt="" class="img-right">
+    </section>
 </body>
 </html>
