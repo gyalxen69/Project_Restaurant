@@ -1,13 +1,14 @@
 import { food } from './data.js' 
 console.log(food);
-let counter = 0;
+var counter = 0;
+var foodQuantity = 0;
+var cart = []
 
 function initialize(){
-    addingListeners();
     printHtml(counter);
+    addingListeners();
 }
 
-initialize();
 
 function printHtml(counter){
     const foodName = document.querySelector('.food-name');
@@ -24,10 +25,16 @@ function addingListeners(){
     const btnNext = document.querySelector('.btn-next');
     btnNext.addEventListener('click', forNext);
     const btnBack = document.querySelector('.btn-back');
-    btnBack.addEventListener('click', forBack)
+    btnBack.addEventListener('click', forBack);
+    const btnLess = document.querySelector('.btn-less');
+    btnLess.addEventListener('click', toLess);
+    const btnAdd = document.querySelector('.btn-more');
+    btnAdd.addEventListener('click', toAdd);
 }
 
 function forNext(){
+    foodQuantity = 0;
+    document.querySelector('.food-quantity').textContent = foodQuantity;
     counter += 1;
     if(counter > food.length - 1)
     {
@@ -37,6 +44,8 @@ function forNext(){
 }
 
 function forBack(){
+    foodQuantity = 0;
+    document.querySelector('.food-quantity').textContent = foodQuantity;
     counter -= 1;
     if(counter < 0)
     {
@@ -45,3 +54,26 @@ function forBack(){
     printHtml(counter);
 }
 
+function toLess(){
+    foodQuantity -= 1;
+    if(foodQuantity < 0)
+    {
+        foodQuantity = 0;
+    }
+    document.querySelector('.food-quantity').textContent = foodQuantity;
+    printHtml(counter);
+}
+
+function toAdd(){
+    foodQuantity += 1;
+    const foodName = document.querySelector('.food-name');
+
+    if(foodQuantity > 10)
+    {
+        foodQuantity = 10;
+    }
+    document.querySelector('.food-quantity').textContent = foodQuantity;
+    printHtml(counter);
+}
+
+initialize();

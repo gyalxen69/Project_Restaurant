@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
 
 *{
     margin: 0;
@@ -9,6 +10,7 @@
 }
 
 body{
+    margin-top: 10px;
     background-color: cornsilk;
 }
 
@@ -21,11 +23,12 @@ header{
 .name-restro{
     color:darkgoldenrod;
     font-family: 'Redressed';
-    font-size: 2.5rem;
+    font-size: 3.2rem;
 }
 
 .main-container{
     max-width: 1024px;
+    width: 1000px;
     margin: auto;
     height: auto;
 }
@@ -45,6 +48,7 @@ main{
     justify-content: space-between;
     height: 70vh;
     padding: 20px;
+    /*background-color: blueviolet;*/
 }
 
 /* article{
@@ -55,69 +59,125 @@ main{
 .info-left{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: calc(100% / 3);
     justify-content: space-evenly;
+    /*background-color: aqua;*/
+}
+
+.info-ingri{
+    display: inline-flex;
+    flex-direction: column;
+    background-color: khaki;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 5px 5px rgb(172, 164, 97);
+}
+
+.ingri{
+    font-family: sans-serif;
 }
 
 #label-ingri{
-    font-family: 'Akaya Telivigala';
+    font-family: 'Sansita Swashed';
     font-weight:550;
+    width: 100%;
+    text-align: center;
     line-height: 2rem;
     font-size: 1.6rem;
+    /*background-color: blueviolet;*/
 }
 
 .ingri-extra{
     padding: 10px;
+    font-family: 'Akaya Telivigala';
     border-radius: 20px;
     height: 30px;
 }
 
 .btn-quantity{
     display: flex;
+    width: 40%;
+    background-color: bisque;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .btn-less{
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-   /* border: none;*/
-    /*box-shadow: 2px 2px gainsboro;*/
+    /* border-radius: 50%; */
+    font-size: 1.6rem;
+    border: none;
+    background-color: inherit;
+    transition: 0.3s;
 }
 
-/*.btn-less:hover{
-    border:groove;
-    box-shadow: 2px 2px gainsboro;
-}*/
+.btn-less:hover{
+    color: white;
+    font-size: 2.5rem;
+} 
 
 .btn-more{
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    /*border: none;*/
-    /*box-shadow: 2px 2px gainsboro;*/
+    /* border-radius: 50%; */
+    font-size: 1.6rem;
+    border: none;
+    background-color: inherit;
+    transition: 0.3s;
 }
 
-/* .btn-more:hover{
-    border:groove;
-    box-shadow: 2px 2px gainsboro;
-}*/
+.btn-more:hover{
+    color: white;
+    font-size: 2.3rem;
+    /* background-color: khaki; */
+}
 
 /*------------------------------ Main Article ------------------------------*/
 .info-main{
     display: flex;
     flex-direction: column;
     /*justify-content: space-around;*/
+    width: calc(100% / 3);
     align-items:flex-start; 
-    /* background-color: blueviolet; */
+    /*background-color:cornflowerblue;*/
 }
 
 .food-name{
-    text-align:left;
+    text-align: center;
     font-size: 3rem;
+    width: 100%;
     font-family: 'Staatliches';
+    /*background-color: yellow;*/
 }
 
 .food-descri{
     text-align: center;
+    width: 100%;
+}
+
+/*------------------------------ Article of the Right side ------------------------------*/
+
+.info-right{
+    display: block;
+    width: calc(100% / 3);
+    text-align:center;
+    position: relative;
+    top: 90px; 
+    /*background-color: aqua;*/
+}
+
+#price-label{
+    font-family: 'Sansita Swashed';
+    font-weight:550;
+    line-height: 2rem;
+    font-size: 1.6rem;
+}
+
+.price{
+    font-family: sans-serif;
 }
 
 /*-----------Button next and back---------------*/
@@ -125,40 +185,26 @@ main{
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 50px;
-    height: 160px;
-    top: 35%;
-    left: 53%;
+    width: 80px;
+    height: 170px;
+    top: 40%;
+    left: 47%;
     border-radius: 50%;
     /* background-color: blue; */
 }
 
 .btn-back{
-    width: 50px;
-    height: 80px;
+    width: 80px;
+    height: 85px;
+    opacity: .4;
     border-radius: 50% 50% 0 0;
 }
 
 .btn-next{
-    width: 50px;
-    height: 80px;
+    width: 80px;
+    height: 85px;
+    opacity: .4;
     border-radius: 0 0 50% 50%;
-}
-
-/*------------------------------ Article of the Right side ------------------------------*/
-
-.info-right{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#price-label{
-    font-family: 'Akaya Telivigala';
-    font-weight:550;
-    line-height: 2rem;
-    font-size: 1.6rem;
 }
 
 /*------------------------------ Footer ------------------------------*/
